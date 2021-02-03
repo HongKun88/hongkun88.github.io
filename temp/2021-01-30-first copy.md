@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "첫 포스팅 테스트 입니다."
-categories: [Guide]
-tags: [test, Python, SQL]
+categories: [Post]
+tags: [Log]
 ---
 
 # 오늘 처음 블로그 생성하였습니다.
