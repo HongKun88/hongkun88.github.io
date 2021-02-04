@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "시간을 기준으로 최초값/최종값 구하기"
-categories: [code]
+categories: [Code]
 tags: [SQL, HiveQL]
 ---
 
