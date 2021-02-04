@@ -15,10 +15,10 @@
 minimal_mistakes_skin    : "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR" #"en-US"
 title                    : "H.NOTE"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "by How To Overcome" # site tagline that appears below site title in masthead
 name                     : "Hong-Jun Jang"
 description              : "A place that keeps records little by little every day"
 url                      : "https://hongkun88.github.io"
@@ -275,11 +275,18 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
+      toc: true
+      read_time: false
+      comments: true
       share: true
       related: true
       show_date: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 # Sidbar
 category_dir: category/
