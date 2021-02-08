@@ -19,7 +19,6 @@ layout: archive
     {% if category[1].size == i %}
       {% if category[0] == page.title %}
         <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
-          <h2 class="archive__subtitle">{{ category[0] }}</h2>
           <div class="entries-{{ entries_layout }}">
             {% for post in category.last %}
               {% include archive-single.html type=entries_layout %}
