@@ -290,5 +290,5 @@ defaults:
 
 # Sidbar
 category_dir: category/
-tags_dir: tag/
+tags_dir: tags/
 tag_dir: tag/
