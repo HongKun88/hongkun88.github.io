@@ -21,7 +21,7 @@ SELECT    `기준값` AS RS_COL_01
   FROM    TB_NAME
  GROUP BY `기준값`
 ```
-  
+   
 ---
 ---
 ### 응용 버전
