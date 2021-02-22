@@ -131,19 +131,19 @@ airflow initdb
 <br>
 
 # Airflow 완료 테스트
-Dag 디렉토리 생성
+Dag 디렉토리 생성  
 ```shell
 mkdir -p ~/airflow/dags
 ```
-스케줄러 실행
+스케줄러 실행  
 ```shell
 airflow scheduler -D
 ```
-워커 실행
+워커 실행  
 ```shell
 airflow worker -D
 ```
-웹 서비스 실행
+웹 서비스 실행  
 ```shell
 airflow webserver -p 8080 -D
 ```
