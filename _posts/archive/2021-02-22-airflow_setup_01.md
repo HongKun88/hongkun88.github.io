@@ -63,7 +63,6 @@ grant all privileges on all tables in schema public to how2overcome;
 \q
 ```
 ## 기타 라이브러리 설치
-### 1
 ```shell
 sudo apt-get install libmysqlclient-dev -y
 sudo apt-get install libssl-dev -y
