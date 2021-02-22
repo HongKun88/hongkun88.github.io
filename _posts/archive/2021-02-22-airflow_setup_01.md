@@ -9,17 +9,16 @@ tags: [Airflow]
 운영체제는 Ubuntu 20.04 LST  
 Python Version - 3.8  
 Airflow Database - PostgreSQL
-
+---
 <br>
 
 # 선행 작업  
 아래 작업은 Python 설치가 선행되어야 한다.  
 만약, 설치가 되지 않았다면 설치는 하고 진행하자. -> Python 설치 링크  
 Python 설치가 되어있다는 가정하에 아래 스크립트를 순차적으로 실행한다.
-
+---
 <br>
 
----
 ## Python 라이브러리 설치
 ```shell
 sudo apt-get install python3-pip -y
@@ -69,7 +68,7 @@ sudo apt-get install libssl-dev -y
 sudo apt-get install libkrb5-dev -y
 sudo apt-get install libsasl2-dev -y
 ```
-
+---
 <br>
 
 # Airflow 설치
@@ -126,7 +125,7 @@ sudo pip install apache-airflow[postgres]
 ```shell
 airflow initdb
 ```
-
+---
 <br>
 
 # Airflow 완료 테스트
