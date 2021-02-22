@@ -17,16 +17,30 @@ Python 설치가 선행되어야 한다. Python 설치 링크
 
 Python 설치가 되어있다는 가정하에 아래 스크립트를 순차적으로 실행한다.
 
+---
+```shell
 sudo apt-get install python3-pip -y
 sudo apt-get install python3-setuptools -y
 sudo apt-get install python3-dev -y
 sudo apt-get install python3-mysqldb -y
+```
 
-
+---
+```shell
 sudo apt-get install postgresql postgresql-contrib -y
+```
 
+
+
+---
+```shell
 postgres psql
+```
 
+
+
+---
+```sql
 ## SQL
 postgres=# 
 
@@ -45,18 +59,25 @@ You are now connected to database "airflow" as user "postgres".
 You are connected to database "airflow" as user "postgres" via socket in "/var/run/postgresql" at port "5432”.
 
 \q
+```
 
 
 
+---
+```shell
 echo 'export AIRFLOW_HOME=~/airflow' > ~/.bash_profile
 
 sudo apt-get install libmysqlclient-dev -y
 sudo apt-get install libssl-dev -y
 sudo apt-get install libkrb5-dev -y
 sudo apt-get install libsasl2-dev -y
+```
 
 
 
+
+---
+```shell
 sudo SLUGIFY_USES_TEXT_UNIDECODE=yes pip install apache-airflow==1.10.14
 
 
@@ -69,21 +90,25 @@ sudo pip install apache-airflow[celery]
 sudo pip install apache-airflow[rabbitmq]
 sudo pip install apache-airflow[mysql]
 sudo pip install apache-airflow[postgres]
+```
 
 
 
-
-
-
+---
+```shell
 executor = CeleryExecutor
 sql_alchemy_conn = postgresql+psycopg2:///airflow
 broker_url = amqp://guest:guest@localhost:5672//
 result_backend = amqp://guest:guest@localhost:5672//
+```
 
 
 
+---
+```shell
 mkdir -p ~/airflow/dags
 
 airflow scheduler -D
 airflow worker -D
 airflow webserver -p 8080 -D
+```
