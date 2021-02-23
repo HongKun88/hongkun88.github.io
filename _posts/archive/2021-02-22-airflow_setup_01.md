@@ -8,7 +8,8 @@ tags: [Airflow]
 개인적으로 찾아보기 위한 기록이기 때문에. 포스팅 후 내용 추가 및 수정이 될 수 있음.  
 운영체제는 Ubuntu 20.04 LST  
 Python Version - 3.8  
-Airflow Database - PostgreSQL  
+Airflow Database - PostgreSQL   
+
 ---  
 <br>
 
@@ -16,6 +17,7 @@ Airflow Database - PostgreSQL
 아래 작업은 Python 설치가 선행되어야 한다.  
 만약, 설치가 되지 않았다면 설치는 하고 진행하자. -> Python 설치 링크  
 Python 설치가 되어있다는 가정하에 아래 스크립트를 순차적으로 실행한다.  
+
 ---  
 <br>
 
@@ -129,6 +131,7 @@ airflow initdb
 <br>
 
 # Airflow 완료 테스트
+
 Dag 디렉토리 생성  
 ```shell
 mkdir -p ~/airflow/dags
@@ -145,3 +148,11 @@ airflow worker -D
 ```shell
 airflow webserver -p 8080 -D
 ```
+
+# Airflow 완료 테스트
+
+# Airflow 완료 테스트
+
+# Airflow 완료 테스트
+
+# Airflow 완료 테스트
