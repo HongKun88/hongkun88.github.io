@@ -57,10 +57,10 @@ alter role how2overcome with login;
 grant all privileges on all tables in schema public to how2overcome;
 
 \c airflow
-# You are now connected to database "airflow" as user "postgres".
+## You are now connected to database "airflow" as user "postgres".
 
 \conninfo
-# You are connected to database "airflow" as user "postgres" via socket in "/var/run/postgresql" at port "5432”.
+## You are connected to database "airflow" as user "postgres" via socket in "/var/run/postgresql" at port "5432”.
 
 \q
 ```
@@ -115,7 +115,7 @@ celery 패키지의 경우 병렬처리를 위한 패키지이며,
 아래 목록은 추가적인 패키지를 설치하자.  
 ```shell
 sudo pip install celery
-sudo pip install psycopg2 >> error
+sudo pip install psycopg2 ## error 발생
 sudo pip install mysqlclient
 sudo pip install psycopg2-binary
 sudo pip install apache-airflow['kubernetes']
