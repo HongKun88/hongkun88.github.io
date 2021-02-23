@@ -8,20 +8,17 @@ tags: [Airflow]
 개인적으로 찾아보기 위한 기록이기 때문에. 포스팅 후 내용 추가 및 수정이 될 수 있음.  
 운영체제는 Ubuntu 20.04 LST  
 Python Version - 3.8  
-Airflow Database - PostgreSQL   
+Airflow Database - PostgreSQL  
 
 ---  
 <br>
 
 # 선행 작업 
-
 아래 작업은 Python 설치가 선행되어야 한다.  
 만약, 설치가 되지 않았다면 설치는 하고 진행하자. -> Python 설치 링크  
 Python 설치가 되어있다는 가정하에 아래 스크립트를 순차적으로 실행한다.  
 
 ---  
-<br>
-
 ## Python 라이브러리 설치
 ```shell
 sudo apt-get install python3-pip -y
@@ -64,6 +61,7 @@ grant all privileges on all tables in schema public to how2overcome;
 
 \q
 ```
+
 ## 기타 라이브러리 설치
 ```shell
 sudo apt-get install libmysqlclient-dev -y
@@ -71,11 +69,11 @@ sudo apt-get install libssl-dev -y
 sudo apt-get install libkrb5-dev -y
 sudo apt-get install libsasl2-dev -y
 ```
+
 ---
 <br>
 
 # Airflow 설치
-
 ## Airflow 환경변수 등록
 ```shell
 echo 'export AIRFLOW_HOME=~/airflow' > ~/.bash_profile
@@ -132,7 +130,6 @@ airflow initdb
 <br>
 
 # Airflow 완료 테스트
-
 Dag 디렉토리 생성  
 ```shell
 mkdir -p ~/airflow/dags
