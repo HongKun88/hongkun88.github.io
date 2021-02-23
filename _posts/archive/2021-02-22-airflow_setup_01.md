@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Airflow 설치"
-categories: [archive]
+categories: [Archive]
 tags: [Airflow]
 ---
 # 시작에 앞서  
