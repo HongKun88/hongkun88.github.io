@@ -117,23 +117,9 @@ airflow initdb
 
 ---
 ### 기타 패키지 설치
-### 기타 패키지 설치
-### 기타 패키지 설치
-### 기타 패키지 설치
-
----
-<br>
-
-# 기타 패키지 설치
-### 기타 패키지 설치2
-# 기타 패키지 설치
-### 기타 패키지 설치2
-# 기타 패키지 설치
-### 기타 패키지 설치2
-
 celery 패키지의 경우 병렬처리를 위한 패키지이며,  
 아래 목록은 추가적인 패키지를 설치하자.  
-```
+```shell
 sudo pip install celery
 sudo pip install psycopg2 >> error
 sudo pip install mysqlclient
@@ -143,11 +129,11 @@ sudo pip install apache-airflow[celery]
 sudo pip install apache-airflow[rabbitmq]
 sudo pip install apache-airflow[mysql]
 sudo pip install apache-airflow[postgres]
-```
+```  
 필요한 패키지가 모두 설치되었다면, Database 초기화를 한번 더 실행해보자.  
 ```shell
 airflow initdb
-```
+```  
 ---
 <br>
 
@@ -157,7 +143,7 @@ Dag 디렉토리 생성
 ```shell
 mkdir -p ~/airflow/dags
 ```
-스케줄러 실행  
+스케줄러 실행   
 ```shell
 airflow scheduler -D
 ```
@@ -169,11 +155,3 @@ airflow worker -D
 ```shell
 airflow webserver -p 8080 -D
 ```
-
-# Airflow 완료 테스트
-
-# Airflow 완료 테스트
-
-# Airflow 완료 테스트
-
-# Airflow 완료 테스트
