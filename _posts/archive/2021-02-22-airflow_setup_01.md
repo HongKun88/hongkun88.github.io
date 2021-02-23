@@ -82,12 +82,12 @@ sudo apt-get install libsasl2-dev -y
 
 # Airflow 설치
 
-### Airflow 환경변수 등록
+## Airflow 환경변수 등록
 ```shell
 echo 'export AIRFLOW_HOME=~/airflow' > ~/.bash_profile
 ```
 ---
-### Airflow 패키지 설치
+## Airflow 패키지 설치
 패키지 설치 시 2.x 버전의 경우, 에러가 발생하는 현상이 있다.  
 그래서, 패키지 버전을 명시하여 주었고, 1.10.14 버전을 설지하였다.  
 만약 pip명령을 사용 할 수 없다면, 하단 링크를 확인  
@@ -97,7 +97,7 @@ sudo pip install apache-airflow==1.10.14
 ## sudo SLUGIFY_USES_TEXT_UNIDECODE=yes pip install apache-airflow==1.10.14
 ```
 ---
-### Airflow Config 수정
+## Airflow Config 수정
 Config 파일의 위치는 '~/airflow/airflow.cfg' 이다.  
 vim이 아니더라도 본인이 익숙한 에디터를 활용하여 수정을 하자.
 ```shell
@@ -116,7 +116,7 @@ airflow initdb
 ```
 
 ---
-### 기타 패키지 설치
+## 기타 패키지 설치
 celery 패키지의 경우 병렬처리를 위한 패키지이며,  
 아래 목록은 추가적인 패키지를 설치하자.  
 ```shell
